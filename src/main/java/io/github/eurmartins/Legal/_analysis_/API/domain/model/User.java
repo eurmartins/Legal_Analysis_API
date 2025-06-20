@@ -1,10 +1,10 @@
 package io.github.eurmartins.Legal._analysis_.API.domain.model;
 
 
+import io.github.eurmartins.Legal._analysis_.API.domain.enumerator.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 @Entity
@@ -47,4 +47,7 @@ public class User {
 
     @Column
     private String lawFirm;
+
+    @Column
+    private Role role;
 }
